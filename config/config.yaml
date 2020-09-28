@@ -1,0 +1,16 @@
+# your domain
+domain: pnb52.herokuapp.com
+
+# database url
+database_url: ""
+
+# cloudflare api
+cf_email: ""
+cf_key: ""
+
+# source definition file
+source-files: 
+  # use local file
+  - ./config/source.yaml
+  # use web file
+  - https://raw.githubusercontent.com/sprindjack/newproxypool/master/config/source.yaml

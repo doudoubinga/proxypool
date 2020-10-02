@@ -1,4 +1,4 @@
-# 模糊抓取订阅链接
+# 订阅链接
 - type: webfuzzsub
   options:
     url: https://raw.githubusercontent.com/du5/free/master/sub.list
@@ -53,7 +53,7 @@
   options:
     url: https://gooii.ml/v2ray/sub/vmess.html
 
-# 网页模糊抓取
+# 网页模糊
 - type: webfuzz
   options:
     url: https://merlinblog.xyz/wiki/freess.html
@@ -124,7 +124,7 @@
   options:
     url: https://raw.githubusercontent.com/52bp/52bp.github.io/master/freesite.html
 
-# tg频道抓取
+# tg
 - type: tgchannel
   options:
     channel: ssrList
@@ -206,12 +206,12 @@
     channel: NetfreexSrV
     num: 200
 
-# 翻墙党论坛抓取
+# 论坛
 - type: web-fanqiangdang
   options:
     url: https://fanqiangdang.com/forum-48-1.html
 
-# 某个网站抓取
+# 网站抓取
 - type: web-freessrxyz
   options:
 - type: subscribe

@@ -26,7 +26,12 @@
 - type: webfuzzsub
   options:
     url: https://raw.githubusercontent.com/oouxx/fqsub/master/sub.list
-
+- type: webfuzzsub
+  options:
+    url: https://github.com/doudoubinga/ceshi/blob/master/config/sub.list
+    
+    
+    
 
 
 

@@ -2,23 +2,23 @@
   "name": "ceshi3332",
   "description": "ceshi",
   "website": "https://www.youtube.com/channel/UClceV39J1Z_9D4_mHkBZrMg?sub_confirmation=1",
-  "repository": "https://github.com/zu1k/proxypool",
+  "repository": "",
   "success_url": "/",
-  "logo": "https://raw.githubusercontent.com/zu1k/proxypool/heroku/assets/proxy.jpg",
+  "logo": "",
   "keywords": [""],
   "env": {
     "CONFIG_FILE": {
-      "description": "Path to config file, could be a url."
+      "description": ""
     },
     "DOMAIN": {
-      "description": "Domain to use."
+      "description": ""
     },
     "CF_API_EMAIL": {
-      "description": "Cloudflare Email.",
+      "description": "",
       "required": false
     },
     "CF_API_KEY": {
-      "description": "Cloudflare API key.",
+      "description": "",
       "required": false
     }
   }

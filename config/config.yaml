@@ -1,5 +1,5 @@
 # your domain
-domain: example.com
+domain: doudoubing3332.heroku.com
 
 # database url
 database_url: ""
@@ -13,4 +13,4 @@ source-files:
   # use local file
   - ./config/source.yaml
   # use web file
-  - https://example.com/source.yaml
+  - https://doudoubing3332.heroku.com/source.yaml

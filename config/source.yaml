@@ -23,6 +23,12 @@
 - type: webfuzzsub
   options:
     url: https://github.com/woytu/notes-vuepress/blob/757206d5c10d112d56a3c789d5a622d4bcfe6375/System/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F.md
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/oouxx/fqsub/master/sub.list
+
+
+
 
 # 订阅链接
 - type: subscribe
@@ -205,6 +211,10 @@
   options:
     channel: NetfreexSrV
     num: 200
+- type: tgchannel
+  options:
+    channel: vmesssr
+    num: 200
 
 # 论坛
 - type: web-fanqiangdang
@@ -212,7 +222,7 @@
     url: https://fanqiangdang.com/forum-48-1.html
 
 # 网站抓取
-- type: web-freessrxyz
+- type: https://free-ssr.xyz/
   options:
 - type: subscribe
   options:

@@ -1,3 +1,4 @@
+
 # 所有节点均从公开互联网上抓取，使用clash自动检查可用性即可
 
 
@@ -12,45 +13,24 @@ socks-port: 7891
 
 # redir port for Linux and macOS
 # redir-port: 7892
-# 允许局域网的连接（可用来共享代理）
+
 allow-lan: false
 mode: rule
-# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
-# 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
-log-level: silent
+log-level: info
 external-controller: 127.0.0.1:9090
 
 proxies:
 
 proxy-groups:
+
   - name: 全局选择
-    type: select
-    proxies:
-      - 延迟最低
-      - 选择国家
-      - 选择节点
-      - 失败切换
-      - 负载均衡
-  - name: 选择国家
     type: select
     proxies:
       - 🇨🇳 中国
       - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
-      - 🇨🇦 加拿大
       - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚
-      - 🇨🇭 瑞士
-      - 🇩🇪 德国
-      - 🇫🇷 法国
-      - 🇬🇧 英国
-      - 🇳🇱 荷兰
-      - 其他国家
-  - name: 选择节点
-    type: select
-    use:
-      - all
+
+
   - name: 🇨🇳 中国
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
@@ -63,218 +43,68 @@ proxy-groups:
     interval: 300
     use:
       - jp
-  - name: 🇸🇬 新加坡
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - sg
-  - name: 🇺🇸 美国
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - us
-  - name: 🇨🇦 加拿大
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - ca
+
   - name: 🇷🇺 俄罗斯
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - ru
-  - name: 🇦🇺 澳大利亚
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+  - name: 选择节点
+    type: select
     use:
-      - au
-  - name: 🇨🇭 瑞士
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - ch
-  - name: 🇩🇪 德国
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - de
-  - name: 🇫🇷 法国
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - fr
-  - name: 🇬🇧 英国
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - gb
-  - name: 🇳🇱 荷兰
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - nl
+      - all
   - name: 其他国家
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
-      - others
-  - name: 延迟最低
-    type: url-test
-    use:
       - all
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-  - name: 负载均衡
-    type: load-balance
-    use:
-      - all
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-  - name: 失败切换
-    type: fallback
-    use:
-      - all
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+
+
 
 proxy-providers:
-  au:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=AU"
-    interval: 3600
-    path: ./provider-au.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+
   cn:
     type: http
     url: "https://{{ .domain }}/clash/proxies?c=CN,HK,TW"
     interval: 3600
     path: ./provider-cn.yaml
     health-check:
-      enable: true
+      enable: false
       interval: 600
       url: http://www.gstatic.com/generate_204
-  us:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=US"
-    interval: 3600
-    path: ./provider-us.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  ca:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=CA"
-    interval: 3600
-    path: ./provider-ca.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+
   jp:
     type: http
     url: "https://{{ .domain }}/clash/proxies?c=JP"
     interval: 3600
     path: ./provider-jp.yaml
     health-check:
-      enable: true
+      enable: false
       interval: 600
       url: http://www.gstatic.com/generate_204
-  sg:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=SG"
-    interval: 3600
-    path: ./provider-sg.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+
   ru:
     type: http
     url: "https://{{ .domain }}/clash/proxies?c=RU"
     interval: 3600
     path: ./provider-ru.yaml
     health-check:
-      enable: true
+      enable: false
       interval: 600
       url: http://www.gstatic.com/generate_204
-  ch:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=CH"
-    interval: 3600
-    path: ./provider-ch.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  de:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=DE"
-    interval: 3600
-    path: ./provider-de.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  fr:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=FR"
-    interval: 3600
-    path: ./provider-fr.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  gb:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=GB"
-    interval: 3600
-    path: ./provider-gb.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  nl:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=NL"
-    interval: 3600
-    path: ./provider-nl.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  others:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?nc=CN,HK,TW,US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU"
-    interval: 3600
-    path: ./provider-others.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+
   all:
     type: http
     url: "https://{{ .domain }}/clash/proxies"
     interval: 3600
-    path: ./provider.yaml
+    path: ./provider-all.yaml
     health-check:
-      enable: true
+      enable: false
       interval: 600
       url: http://www.gstatic.com/generate_204
+
 
 rules:
   - DOMAIN-SUFFIX,smtp,DIRECT

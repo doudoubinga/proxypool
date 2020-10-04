@@ -27,6 +27,45 @@ proxies:
   - {name: JMS-18227@c18s5.jamjams.net:22863, server: 104.193.8.70, port: 22863, type: vmess, uuid: 852772b2-c3b4-4675-868d-58974f75e836, alterId: 8, cipher: auto, tls: false}
   - {name: JMS-18227@c18s4.jamjams.net:22863, server: 204.124.180.240, port: 22863, type: vmess, uuid: 852772b2-c3b4-4675-868d-58974f75e836, alterId: 8, cipher: auto, tls: false}
   - {name: JMS-18227@c18s4.jamjams.net:22863 2, server: 204.124.180.240, port: 22863, type: vmess, uuid: 852772b2-c3b4-4675-868d-58974f75e836, alterId: 8, cipher: auto, tls: false}
+
+  - {name: 🇩🇪 德国, server: 51.89.54.217, port: 443, type: vmess, uuid: 24fe9497-b11e-4474-8ddd-63cfc471bbee, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.sikushui.xyz}}
+  - {name: 🇩🇪 德国 2, server: llajv.rebldp.tech, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: llajv.rebldp.tech}}
+  - {name: 🇷🇺 俄罗斯, server: www.adminels.xyz, port: 10000, type: vmess, uuid: 2555902e-00e8-11eb-8255-525400706db8, alterId: 32, cipher: auto, tls: true, network: ws, ws-path: /sQtzXSRc/, ws-headers: {Host: www.adminels.xyz}}
+  - {name: 🇫🇷 法国, server: 51.91.223.25, port: 443, type: vmess, uuid: 29b4257d-d82f-4bba-8964-0c657bb645d1, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.kuaidiku.xyz}}
+  - {name: 🇰🇷 韩国, server: weneedfreedom.ml, port: 443, type: vmess, uuid: 86108082-027c-11eb-a0a3-560002fdcf34, alterId: 46, cipher: auto, tls: true, network: ws, ws-path: /I0pMyJdY/, ws-headers: {Host: weneedfreedom.ml}}
+  - {name: 🇰🇷 韩国 2, server: littlesur.ml, port: 443, type: vmess, uuid: 1f7f3408-0489-11eb-8923-560002fec301, alterId: 46, cipher: auto, tls: true, network: ws, ws-path: /96CAUTo3/, ws-headers: {Host: littlesur.ml}}
+  - {name: 🇺🇸 美国, server: milkgogo.tk, port: 443, type: vmess, uuid: abdbfa90-00a5-11eb-b428-560002fce3f7, alterId: 46, cipher: auto, tls: true, network: ws, ws-path: /S7U8FNCs/, ws-headers: {Host: milkgogo.tk}}
+  - {name: 🇺🇸 美国 2, server: ny.whalechoi.cn, port: 443, type: vmess, uuid: 767fd28b-1260-429a-baad-2cf2804829e5, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /whalechoi, ws-headers: {Host: ny.whalechoi.cn}}
+  - {name: 🇺🇸 美国 3, server: 51.89.125.56, port: 443, type: vmess, uuid: 0a899b7d-de24-4133-a78d-8bd7498eb3c3, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.particularly.live}}
+  - {name: 🇺🇸 美国（欢迎订阅Youtube破解资源君）, server: 120.240.47.69, port: 12118, type: vmess, uuid: 4e136bea-9c6a-48f6-a70f-d33baa9eaf26, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: buyvm.aishare.club}}
+  - {name: 🇯🇵 日本, server: cdp2019.ml, port: 443, type: vmess, uuid: f2a53aa8-fe3a-11ea-a8c3-560002fba79e, alterId: 46, cipher: auto, tls: true, network: ws, ws-path: /K1TCApGM/, ws-headers: {Host: cdp2019.ml}}
+  - {name: 🇯🇵 日本 2, server: ccpisdevil.ml, port: 443, type: vmess, uuid: 78e5b61c-027b-11eb-9b86-560002fdce6b, alterId: 46, cipher: auto, tls: true, network: ws, ws-path: /DocGV2gf/, ws-headers: {Host: ccpisdevil.ml}}
+  - {name: 🇯🇵 日本（欢迎订阅Youtube破解资源君）, server: 89.31.126.205, port: 80, type: vmess, uuid: 46d6ddab-0cc7-3299-8d6a-8e802a5fceba, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 89.31.126.205}}
+  - {name: 🇨🇭 瑞士, server: tr24.free2222.xyz, port: 443, type: vmess, uuid: ba9bd24c-f237-45ad-bb3e-4f7430897b9c, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /996de193ab627c/, ws-headers: {Host: tr24.free2222.xyz}}
+  - {name: 🇨🇳 台湾, server: 35.221.208.65, port: 8787, type: vmess, uuid: 008934e0-ba68-4269-b0ec-2a45e2aafa77, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾 2, server: 34.80.2.254, port: 19060, type: vmess, uuid: 01b7a40d-1bc7-3e7e-8829-069250b9a39a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 34.80.2.254}}
+  - {name: 波兰, server: 185.246.208.182, port: 31140, type: ss, cipher: aes-256-gcm, password: A6FwVcjCwTBKmPCYnQGfbPfL}
+  - {name: 🇩🇪 德国 3, server: 89.187.169.104, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇩🇪 德国 4, server: 89.187.169.104, port: 31140, type: ss, cipher: aes-256-gcm, password: A6FwVcjCwTBKmPCYnQGfbPfL}
+  - {name: 🇫🇷 法国 2, server: 185.108.106.142, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇺🇸 美国 4, server: 185.124.240.157, port: 31140, type: ss, cipher: aes-256-gcm, password: A6FwVcjCwTBKmPCYnQGfbPfL}
+  - {name: 🇺🇸 美国 5, server: us-kan.wbnet.cf, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇺🇸 美国 6, server: us-mnz.wbnet.cf, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇺🇸 美国 7, server: us-tpa.wbnet.cf, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇺🇸 美国（欢迎订阅Youtube破解资源君） 2, server: 213.59.119.7, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+  - {name: 🇺🇸 美国（欢迎订阅Youtube破解资源君） 3, server: 213.59.119.7, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+  - {name: 葡萄牙, server: 5.154.174.75, port: 31140, type: ss, cipher: aes-256-gcm, password: A6FwVcjCwTBKmPCYnQGfbPfL}
+  - {name: 🇹🇷 土耳其, server: 107.150.95.155, port: 31140, type: ss, cipher: aes-256-gcm, password: A6FwVcjCwTBKmPCYnQGfbPfL}
+  - {name: 希腊, server: 194.150.167.42, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇸🇬 新加坡, server: 37.120.151.14, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 匈牙利, server: 37.120.144.215, port: 31140, type: ss, cipher: aes-256-gcm, password: A6FwVcjCwTBKmPCYnQGfbPfL}
+  - {name: 🇮🇹 意大利, server: 84.17.58.150, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇬🇧 英国, server: ch-zur.wbnet.cf, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇬🇧 英国 2, server: rs-beg.wbnet.cf, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: 🇬🇧 英国 3, server: 5.226.139.65, port: 39942, type: ss, cipher: aes-256-gcm, password: ztnC5j7dm82KJSSpe2jk3eWB}
+  - {name: 🇬🇧 英国 4, server: 178.239.166.234, port: 34007, type: ss, cipher: aes-256-gcm, password: Ant36ph4AX8fHx59fUTLxMqq}
+  - {name: 🇻🇳 越南, server: vn-hcm.wbnet.cf, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+
   - {name: JMS-37668@c23s801.jamjams.net:22762, server: 23.83.240.132, port: 22762, type: vmess, uuid: fe886de6-943f-4e8e-810b-3b5f1db1cfee, alterId: 8, cipher: auto, tls: false}
   - {name: JMS-37668@c23s5.jamjams.net:22762, server: 104.193.8.52, port: 22762, type: vmess, uuid: fe886de6-943f-4e8e-810b-3b5f1db1cfee, alterId: 8, cipher: auto, tls: false}
   - {name: JMS-37668@c23s4.jamjams.net:22762, server: 204.124.180.66, port: 22762, type: vmess, uuid: fe886de6-943f-4e8e-810b-3b5f1db1cfee, alterId: 8, cipher: auto, tls: false}
@@ -80,6 +119,43 @@ proxy-groups:
       - JMS-37668@c23s5.jamjams.net:22762
       - JMS-37668@c23s4.jamjams.net:22762
       - JMS-37668@c23s3.jamjams.net:22762
+      - 🇩🇪 德国
+      - 🇩🇪 德国 2
+      - 🇷🇺 俄罗斯
+      - 🇫🇷 法国
+      - 🇰🇷 韩国
+      - 🇰🇷 韩国 2
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国（欢迎订阅Youtube破解资源君）
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本（欢迎订阅Youtube破解资源君）
+      - 🇨🇭 瑞士
+      - 🇨🇳 台湾
+      - 🇨🇳 台湾 2
+      - 波兰
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇫🇷 法国 2
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国（欢迎订阅Youtube破解资源君） 2
+      - 🇺🇸 美国（欢迎订阅Youtube破解资源君） 3
+      - 葡萄牙
+      - 🇹🇷 土耳其
+      - 希腊
+      - 🇸🇬 新加坡
+      - 匈牙利
+      - 🇮🇹 意大利
+      - 🇬🇧 英国
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇬🇧 英国 4
+      - 🇻🇳 越南
 proxy-providers:
   provider:
     type: http

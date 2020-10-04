@@ -6,8 +6,12 @@
 - type: webfuzzsub
   options:
     url: https://github.com/doudoubinga/ceshi/blob/master/trash/base64-sub
-    
-    
+- type: webfuzzsub
+  options:
+    url: https://github.com/JACKUSR2089/v2ray-subscribed   
+- type: webfuzzsub
+  options:
+    url: https://github.com/pojiezhiyuanjun/freev2
     
 
 

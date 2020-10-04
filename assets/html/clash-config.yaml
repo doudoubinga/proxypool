@@ -93,8 +93,9 @@ proxy-providers:
 rules:
   - DOMAIN-SUFFIX,smtp,DIRECT
   - DOMAIN-KEYWORD,aria2,DIRECT
-
-
+  - DOMAIN-KEYWORD,google,延迟最低
+  - DOMAIN-KEYWORD,github,延迟最低
+  - DOMAIN-KEYWORD,heroku,延迟最低
   - GEOIP,CN,DIRECT
 
   - MATCH,全局选择

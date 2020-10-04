@@ -12,7 +12,7 @@ import (
 	"github.com/Dreamacro/clash/adapters/outbound"
 )
 
-const defaultURLTestTimeout = time.Second * 5
+const defaultURLTestTimeout = time.Second * 3
 
 func testDelay(p Proxy) (delay uint16, err error) {
 	pmap := make(map[string]interface{})

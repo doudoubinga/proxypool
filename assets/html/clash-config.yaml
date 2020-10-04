@@ -29,7 +29,24 @@ proxy-groups:
       - 🇨🇳 中国
       - 🇯🇵 日本
       - 🇷🇺 俄罗斯
-      - 延迟最低all
+      - aealatau
+      - babebg
+      - cacycz
+      - dedk
+      - eees
+      - fifr
+      - gbhrhu
+      - idieilinisit
+      - kr
+      - ltlulvly
+      - mdmkmy
+      - ngnlnonz
+      - plptpy
+      - rors
+      - sgsisk
+      - thtr
+      - uaus
+      - vnzazz
       - 选择节点
   - name: 🇨🇳 中国
     type: url-test
@@ -43,19 +60,127 @@ proxy-groups:
     interval: 300
     use:
       - jp
+  - name: aealatau
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      -  aealatau1
+  - name: babebg
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - babebg1
 
+  - name: cacycz
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - cacycz1
+  - name: dedk
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - dedk1
+  - name: eees
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - eees1
+
+  - name: fifr
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - fifr1
+  - name: gbhrhu
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - gbhrhu1
+  - name: idieilinisit
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - idieilinisit1
+
+  - name: kr
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - kr1
+  - name: ltlulvly
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - ltlulvly1
+  - name: mdmkmy
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - mdmkmy1
+
+  - name: ngnlnonz
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - ngnlnonz1
+  - name: plptpy
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - plptpy1
+  - name: rors
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - rors1
+
+  - name: sgsisk
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - sgsisk1
+  - name: thtr
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - thtr1
+  - name: uaus
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - uaus1
+
+  - name: vnzazz
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - vnzazz1
   - name: 🇷🇺 俄罗斯
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - ru
-  - name: 延迟最低all
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - all
+
   - name: 选择节点
     type: select
     use:
@@ -65,6 +190,168 @@ proxy-groups:
 
 
 proxy-providers:
+  aealatau1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=AE,AL,AT,AU"
+    interval: 3600
+    path: ./provider-aealatau1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  babebg1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=BA,BE,BG"
+    interval: 3600
+    path: ./provider-babebg1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  cacycz1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=CA,CY,CZ"
+    interval: 3600
+    path: ./provider-cacycz1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  dedk1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=DE,DK"
+    interval: 3600
+    path: ./provider-dedk1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  eees1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=EE,ES"
+    interval: 3600
+    path: ./provider-eees1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  fifr1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=FI,FR"
+    interval: 3600
+    path: ./provider-fifr1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  gbhrhu1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=GB,HR,HU"
+    interval: 3600
+    path: ./provider-gbhrhu1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  idieilinisit1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=ID,IE,IL,IN,IS,IT"
+    interval: 3600
+    path: ./provider-idieilinisit1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  kr1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=KR"
+    interval: 3600
+    path: ./provider-kr1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  ltlulvly1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=LT,LU,LV"
+    interval: 3600
+    path: ./provider-ltlulvly1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  mdmkmy1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=MD,MK,MY"
+    interval: 3600
+    path: ./provider-mdmkmy1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  ngnlnonz1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=NG,NL,NO,NZ"
+    interval: 3600
+    path: ./provider-ngnlnonz1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  plptpy1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=PL,PT,PY"
+    interval: 3600
+    path: ./provider-plptpy1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  rors1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=RO,RS"
+    interval: 3600
+    path: ./provider-rors1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  sgsisk1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=SG,SI,SK"
+    interval: 3600
+    path: ./provider-sgsisk1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  thtr1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=TH,TR"
+    interval: 3600
+    path: ./provider-thtr1yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  uaus1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=UA,US"
+    interval: 3600
+    path: ./provider-uaus1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  vnzazz1:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=VN,ZA,ZZ"
+    interval: 3600
+    path: ./provider-vnzazz1.yaml
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
 
   cn:
     type: http

@@ -18,9 +18,7 @@
 - type: webfuzz
   options:
     url: https://telegra.ph/2020-10-3-10-02
-- type: webfuzz
-  options:
-    url: https://merlinblog.xyz/wiki/freess.html
+
 
 
 
@@ -38,7 +36,7 @@
     num: 200
 - type: tgchannel
   options:
-    channel: vmesssr
+    channel: V2List
     num: 200
 
 
@@ -47,19 +45,19 @@
 
 
 # 论坛
-- type: web-fanqiangdang
-  options:
-    url: https://fanqiangdang.com/forum-48-1.html
+#- type: web-fanqiangdang
+#  options:
+#    url: https://fanqiangdang.com/forum-48-1.html
 
 # 网站抓取
-- type: https://free-ssr.xyz/
-  options:
+#- type: https://free-ssr.xyz/
+#  options:
 
 # 爬订阅
 
-- type: subscribe
-  options:
-    url: https://gooii.ml/v2ray/sub/vmess.html
+#- type: subscribe
+#  options:
+#    url: https://gooii.ml/v2ray/sub/vmess.html
 
 
 

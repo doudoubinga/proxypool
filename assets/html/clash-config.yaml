@@ -83,7 +83,7 @@ proxy-groups:
 proxy-providers:
   provider:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?type=ss,ssr,vmess"
+    url: "https://doudoubing3332.herokuapp.com/clash/proxies?type=ss,ssr,vmess"
     interval: 3600
     path: ./provider.yaml
     health-check:
@@ -103,7 +103,7 @@ rules:
   - DOMAIN-SUFFIX,gvt1.com,全局选择
   - DOMAIN-SUFFIX,gvt3.com,全局选择
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,全局选择
-  - DOMAIN-KEYWORD,google,全局选择
+  - DOMAIN-KEYWORD,google,自动选择
   - DOMAIN-KEYWORD,blogspot,全局选择
   - DOMAIN-SUFFIX,onedrive.live.com,全局选择
   - DOMAIN-SUFFIX,xboxlive.com,全局选择
@@ -277,7 +277,7 @@ rules:
   - DOMAIN-SUFFIX,greatfire.org,全局选择
   - DOMAIN-SUFFIX,gumroad.com,全局选择
   - DOMAIN-SUFFIX,hbg.com,全局选择
-  - DOMAIN-SUFFIX,heroku.com,延迟最低
+  - DOMAIN-SUFFIX,heroku.com,自动选择
   - DOMAIN-SUFFIX,hightail.com,全局选择
   - DOMAIN-SUFFIX,hk01.com,全局选择
   - DOMAIN-SUFFIX,hkbf.org,全局选择
@@ -465,7 +465,7 @@ rules:
   - DOMAIN-SUFFIX,zello.com,全局选择
   - DOMAIN-SUFFIX,zeronet.io,全局选择
   - DOMAIN-SUFFIX,zoom.us,全局选择
-  - DOMAIN-KEYWORD,github,全局选择
+  - DOMAIN-KEYWORD,github,自动选择
   - DOMAIN-KEYWORD,jav,全局选择
   - DOMAIN-KEYWORD,pinterest,全局选择
   - DOMAIN-KEYWORD,porn,全局选择
@@ -844,3 +844,4 @@ rules:
   - GEOIP,CN,DIRECT
 
   - MATCH,全局选择
+

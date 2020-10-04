@@ -18,7 +18,9 @@
 - type: webfuzz
   options:
     url: https://telegra.ph/2020-10-3-10-02
-
+- type: webfuzz
+  options:
+    url: https://lisondawang.tk/jiedianfenxiang.html
 
 
 

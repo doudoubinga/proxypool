@@ -63,7 +63,7 @@ proxy-groups:
       - provider
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
-  - name: ♻️ 自动选择
+  - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300

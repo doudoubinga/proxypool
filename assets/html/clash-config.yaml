@@ -86,55 +86,55 @@ proxy-groups:
  
   - name: 手动云1
     type: select
-    proxies:
+    use:
       - websub1
   - name: 手动云2
     type: select
-    proxies:
+    use:
       - websub2
   - name: 手动云3
     type: select
-    proxies:
+    use:
       - websub3
   - name: 手动云4
     type: select
-    proxies:
+    use:
       - websub4
   - name: 手动云5
     type: select
-    proxies:
+    use:
       - websub5
   - name: 手动云6
     type: select
-    proxies:
+    use:
       - websub6
   - name: 手动云7
     type: select
-    proxies:
+    use:
       - websub7
   - name: 手动云8
     type: select
-    proxies:
+    use:
       - websub8
   - name: 手动云9
     type: select
-    proxies:
+    use:
       - websub9
   - name: 手动云10
     type: select
-    proxies:
+    use:
       - websub10
   - name: 手动云11
     type: select
-    proxies:
+    use:
       - websub11
   - name: 手动云12
     type: select
-    proxies:
+    use:
       - websub12
   - name: 手动云13
     type: select
-    proxies:
+    use:
       - websub13
 
 

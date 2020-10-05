@@ -124,7 +124,10 @@
   options:
     channel: vmesssr
     num: 200
-
+- type: tgchannel
+  options:
+    channel: youmtp
+    num: 200
 
 
 

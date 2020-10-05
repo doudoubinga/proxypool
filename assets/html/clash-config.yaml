@@ -27,6 +27,7 @@ proxy-groups:
       - 负载均衡
       - 延迟最低
       - 手选本地
+      - 手选延迟
       - 手选云1
       - 手选云2
       - 手选云3
@@ -39,7 +40,7 @@ proxy-groups:
       - 手选云10
       - 手选云11
       - 手选云12
-      - 手选云13
+
 
   - name: 负载均衡
     type: load-balance
@@ -78,64 +79,76 @@ proxy-groups:
       - 筛选11
       - 筛选13
       - 本地
-  - name: 手动本地
+  - name: 手选本地
     type: select
     proxies:
       - 本地
-      
+  - name: 手选延迟
+    type: select
+    proxies:
+      - 筛选1
+      - 筛选2
+      - 筛选3
+      - 筛选4
+      - 筛选5
+      - 筛选6
+      - 筛选7
+      - 筛选8
+      - 筛选9
+      - 筛选10
+      - 筛选11
+      - 筛选13
+      - 本地
  
-  - name: 手动云1
+  - name: 手选云1
     type: select
     use:
       - websub1
-  - name: 手动云2
+  - name: 手选云2
     type: select
     use:
       - websub2
-  - name: 手动云3
+  - name: 手选云3
     type: select
     use:
       - websub3
-  - name: 手动云4
+  - name: 手选云4
     type: select
     use:
       - websub4
-  - name: 手动云5
+  - name: 手选云5
     type: select
     use:
       - websub5
-  - name: 手动云6
+  - name: 手选云6
     type: select
     use:
       - websub6
-  - name: 手动云7
+  - name: 手选云7
     type: select
     use:
       - websub7
-  - name: 手动云8
+  - name: 手选云8
     type: select
     use:
       - websub8
-  - name: 手动云9
+  - name: 手选云9
     type: select
     use:
       - websub9
-  - name: 手动云10
+  - name: 手选云10
     type: select
     use:
       - websub10
-  - name: 手动云11
+  - name: 手选云11
     type: select
     use:
       - websub11
-  - name: 手动云12
-    type: select
-    use:
-      - websub12
-  - name: 手动云13
+  - name: 手选云12
     type: select
     use:
       - websub13
+
 
 
 
@@ -372,3 +385,4 @@ rules:
   - GEOIP,CN,DIRECT
 
   - MATCH,全局选择
+

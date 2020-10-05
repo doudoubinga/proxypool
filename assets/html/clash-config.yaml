@@ -29,12 +29,10 @@ proxy-groups:
       - 失败切换
       - 手动选择
       - 本地备用
+      - 全部节点
 
-
-  - name: 负载均衡
-    type: load-balance
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+  - name: 手动选择
+    type: select
     proxies:
       - 筛选1
       - 筛选2
@@ -49,13 +47,7 @@ proxy-groups:
       - 筛选11
       - 筛选13
       - 本地
-    
-  - name: 本地备用
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-      - 本地
+      
       
   - name: 延迟最低
     type: url-test
@@ -95,14 +87,39 @@ proxy-groups:
       - 筛选11
       - 筛选13
       - 本地
-
-    
-  - name: 手动选择
+  - name: 全部节点
     type: select
     use:
       - websub
       - test
 
+    
+
+  - name: 负载均衡
+    type: load-balance
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    proxies:
+      - 筛选1
+      - 筛选2
+      - 筛选3
+      - 筛选4
+      - 筛选5
+      - 筛选6
+      - 筛选7
+      - 筛选8
+      - 筛选9
+      - 筛选10
+      - 筛选11
+      - 筛选13
+      - 本地
+    
+  - name: 本地备用
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 本地
   - name: 筛选1
     type: url-test
     url: 'http://www.gstatic.com/generate_204'

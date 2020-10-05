@@ -104,6 +104,7 @@
   options:
     channel: ssrv2taytgshare
     num: 200
+
 - type: tgchannel
   options:
     channel: freeshadowsock
@@ -127,6 +128,54 @@
 - type: tgchannel
   options:
     channel: youmtp
+    num: 200
+- type: tgchannel
+  options:
+    channel: ssrkn
+    num: 200
+- type: tgchannel
+  options:
+    channel: abchz
+    num: 200
+- type: tgchannel
+  options:
+    channel: yg251153
+    num: 200
+- type: tgchannel
+  options:
+    channel: woyaofq
+    num: 200
+- type: tgchannel
+  options:
+    channel: wwx_com
+    num: 200
+- type: tgchannel
+  options:
+    channel: freessr4k
+    num: 200
+- type: tgchannel
+  options:
+    channel: ultrafreevpn
+    num: 200
+- type: tgchannel
+  options:
+    channel: VSshit
+    num: 200
+- type: tgchannel
+  options:
+    channel: InternetSSR
+    num: 200
+- type: tgchannel
+  options:
+    channel: baipiaodadui
+    num: 200
+- type: tgchannel
+  options:
+    channel: mtproxy666
+    num: 200
+- type: tgchannel
+  options:
+    channel: v2ray666
     num: 200
 
 

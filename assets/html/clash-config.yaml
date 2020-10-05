@@ -81,8 +81,8 @@ proxy-groups:
       - 本地
   - name: 手选本地
     type: select
-    proxies:
-      - 本地
+    use:
+      - test
   - name: 手选延迟
     type: select
     proxies:

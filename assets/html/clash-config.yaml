@@ -26,74 +26,20 @@ proxy-groups:
     proxies:
       - 负载均衡
       - 延迟最低
-      - 失败切换
-      - 手动选择
-      - 本地备用
-      - 全部节点
-
-  - name: 手动选择
-    type: select
-    proxies:
-      - 筛选1
-      - 筛选2
-      - 筛选3
-      - 筛选4
-      - 筛选5
-      - 筛选6
-      - 筛选7
-      - 筛选8
-      - 筛选9
-      - 筛选10
-      - 筛选11
-      - 筛选13
-      - 本地
-      
-      
-  - name: 延迟最低
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    proxies:
-      - 筛选1
-      - 筛选2
-      - 筛选3
-      - 筛选4
-      - 筛选5
-      - 筛选6
-      - 筛选7
-      - 筛选8
-      - 筛选9
-      - 筛选10
-      - 筛选11
-      - 筛选13
-      - 本地
-
-    
-  - name: 失败切换
-    type: fallback
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    proxies:
-      - 筛选1
-      - 筛选2
-      - 筛选3
-      - 筛选4
-      - 筛选5
-      - 筛选6
-      - 筛选7
-      - 筛选8
-      - 筛选9
-      - 筛选10
-      - 筛选11
-      - 筛选13
-      - 本地
-  - name: 全部节点
-    type: select
-    use:
-      - websub
-      - test
-
-    
+      - 手选本地
+      - 手选云1
+      - 手选云2
+      - 手选云3
+      - 手选云4
+      - 手选云5
+      - 手选云6
+      - 手选云7
+      - 手选云8
+      - 手选云9
+      - 手选云10
+      - 手选云11
+      - 手选云12
+      - 手选云13
 
   - name: 负载均衡
     type: load-balance
@@ -113,13 +59,91 @@ proxy-groups:
       - 筛选11
       - 筛选13
       - 本地
-    
-  - name: 本地备用
+      
+  - name: 延迟最低
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
+      - 筛选1
+      - 筛选2
+      - 筛选3
+      - 筛选4
+      - 筛选5
+      - 筛选6
+      - 筛选7
+      - 筛选8
+      - 筛选9
+      - 筛选10
+      - 筛选11
+      - 筛选13
       - 本地
+  - name: 手动本地
+    type: select
+    proxies:
+      - 本地
+      
+ 
+  - name: 手动云1
+    type: select
+    proxies:
+      - websub1
+  - name: 手动云2
+    type: select
+    proxies:
+      - websub2
+  - name: 手动云3
+    type: select
+    proxies:
+      - websub3
+  - name: 手动云4
+    type: select
+    proxies:
+      - websub4
+  - name: 手动云5
+    type: select
+    proxies:
+      - websub5
+  - name: 手动云6
+    type: select
+    proxies:
+      - websub6
+  - name: 手动云7
+    type: select
+    proxies:
+      - websub7
+  - name: 手动云8
+    type: select
+    proxies:
+      - websub8
+  - name: 手动云9
+    type: select
+    proxies:
+      - websub9
+  - name: 手动云10
+    type: select
+    proxies:
+      - websub10
+  - name: 手动云11
+    type: select
+    proxies:
+      - websub11
+  - name: 手动云12
+    type: select
+    proxies:
+      - websub12
+  - name: 手动云13
+    type: select
+    proxies:
+      - websub13
+
+
+
+
+
+    
+
+
   - name: 筛选1
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
@@ -210,7 +234,7 @@ proxy-providers:
     path: ./websub.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub1:
@@ -220,7 +244,7 @@ proxy-providers:
     path: ./websub1.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub2:
@@ -230,7 +254,7 @@ proxy-providers:
     path: ./websub2.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub3:
@@ -240,7 +264,7 @@ proxy-providers:
     path: ./websub3.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub4:
@@ -250,7 +274,7 @@ proxy-providers:
     path: ./websub4.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub5:
@@ -260,7 +284,7 @@ proxy-providers:
     path: ./websub5.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub6:
@@ -270,7 +294,7 @@ proxy-providers:
     path: ./websub6.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub7:
@@ -280,7 +304,7 @@ proxy-providers:
     path: ./websub7.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub8:
@@ -290,7 +314,7 @@ proxy-providers:
     path: ./websub8.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub9:
@@ -300,7 +324,7 @@ proxy-providers:
     path: ./websub9.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub10:
@@ -310,7 +334,7 @@ proxy-providers:
     path: ./websub10.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
   websub11:
@@ -320,7 +344,7 @@ proxy-providers:
     path: ./websub11.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 
 
@@ -332,14 +356,14 @@ proxy-providers:
     path: ./websub13.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
   test:
     type: file
     path: ./test.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 60
       url: http://www.gstatic.com/generate_204
 rules:
   - DOMAIN-SUFFIX,smtp,DIRECT

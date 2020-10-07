@@ -108,7 +108,7 @@ proxy-providers:
 
   websubss:
     type: http
-    url: "https://{{ .domain }}/clash/proxies??type=ss"
+    url: "https://{{ .domain }}/clash/proxies?type=ss"
     interval: 86400
     path: ./websubss.yaml
     health-check:
@@ -118,7 +118,7 @@ proxy-providers:
 
   websubssr:
     type: http
-    url: "https://{{ .domain }}/clash/proxies??type=ssr"
+    url: "https://{{ .domain }}/clash/proxies?type=ssr"
     interval: 86400
     path: ./websubssr.yaml
     health-check:
@@ -128,7 +128,7 @@ proxy-providers:
 
   websubvmess:
     type: http
-    url: "https://{{ .domain }}/clash/proxies??type=vmess"
+    url: "https://{{ .domain }}/clash/proxies?type=vmess"
     interval: 86400
     path: ./websubvmess.yaml
     health-check:

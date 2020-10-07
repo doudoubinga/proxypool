@@ -34,24 +34,22 @@ proxy-groups:
   - name: 手动选择2
     type: select
     proxies:
-      - baidu
-      - zhihu
-      - github
-      - ptt
-      - pornhub
-      - bilibili
+      - 分类测试vmess
+      - 分类测试本地
+      - 分类测试全部
+      - 分类测试ss
+      - 分类测试ssr
 
   - name: 负载均衡
     type: load-balance
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
-      - baidu
-      - zhihu
-      - github
-      - ptt
-      - pornhub
-      - bilibili
+      - 分类测试vmess
+      - 分类测试本地
+      - 分类测试全部
+      - 分类测试ss
+      - 分类测试ssr
 
 
   - name: 失败切换
@@ -59,55 +57,43 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
-      - baidu
-      - zhihu
-      - github
-      - ptt
-      - pornhub
-      - bilibili
+      - 分类测试vmess
+      - 分类测试本地
+      - 分类测试ss
+      - 分类测试ssr
 
-  - name: baidu
-    type: url-test
-    url: 'http://www.baidu.com/'
-    interval: 300
-    use:
-      - websub
-      - test
-  - name: zhihu
-    type: url-test
-    url: 'https://www.zhihu.com/signin'
-    interval: 300
-    use:
-      - websub
-      - test
-  - name: github
-    type: url-test
-    url: 'https://github.com/'
-    interval: 300
-    use:
-      - websub
-      - test
-  - name: ptt
-    type: url-test
-    url: 'https://www.ptt.cc/cls/1056'
-    interval: 300
-    use:
-      - websub
-      - test
-  - name: pornhub
-    type: url-test
-    url: 'https://www.pornhub.com/'
-    interval: 300
-    use:
-      - websub
-      - test
-  - name: bilibili
+
+
+  - name: 分类测试全部
     type: url-test
     url: 'https://www.bilibili.com/'
     interval: 300
     use:
       - websub
-      - test1
+  - name: 分类测试本地
+    type: url-test
+    url: 'https://www.bilibili.com/'
+    interval: 300
+    use:
+      - test
+  - name: 分类测试vmess
+    type: url-test
+    url: 'https://www.bilibili.com/'
+    interval: 300
+    use:
+      - websubvmess
+  - name: 分类测试ssr
+    type: url-test
+    url: 'https://www.bilibili.com/'
+    interval: 300
+    use:
+      - websubssr
+  - name: 分类测试ss
+    type: url-test
+    url: 'https://www.bilibili.com/'
+    interval: 300
+    use:
+      - websubss
 
 proxy-providers:
   websub:

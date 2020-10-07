@@ -103,7 +103,7 @@ proxy-providers:
     path: ./websub.yaml
     health-check:
       enable: true
-      interval: 120
+      interval: 900
       url: http://www.gstatic.com/generate_204
 
   websubss:
@@ -113,7 +113,7 @@ proxy-providers:
     path: ./websubss.yaml
     health-check:
       enable: true
-      interval: 120
+      interval: 900
       url: http://www.gstatic.com/generate_204
 
   websubssr:
@@ -123,7 +123,7 @@ proxy-providers:
     path: ./websubssr.yaml
     health-check:
       enable: true
-      interval: 120
+      interval: 900
       url: http://www.gstatic.com/generate_204
 
   websubvmess:
@@ -133,7 +133,7 @@ proxy-providers:
     path: ./websubvmess.yaml
     health-check:
       enable: true
-      interval: 120
+      interval: 900
       url: http://www.gstatic.com/generate_204
 
   test:
@@ -141,7 +141,7 @@ proxy-providers:
     path: ./test.yaml
     health-check:
       enable: true
-      interval: 120
+      interval: 900
       url: http://www.gstatic.com/generate_204
 rules:
   - DOMAIN-SUFFIX,smtp,DIRECT

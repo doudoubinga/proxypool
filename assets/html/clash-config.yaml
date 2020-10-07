@@ -1,0 +1,166 @@
+# port of HTTP
+port: 7890
+
+# port of SOCKS5
+socks-port: 7891
+
+# (HTTP and SOCKS5 in one port)
+# mixed-port: 7890
+
+# redir port for Linux and macOS
+# redir-port: 7892
+
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+proxies:
+
+proxy-groups:
+  - name: 全局选择
+    type: select
+    proxies:
+      - 手动选择2
+      - 失败切换
+      - 手动选择1
+      - 负载均衡
+  - name: 手动选择1
+    type: select
+    use:
+      - websubvmess
+      - test
+
+  - name: 手动选择2
+    type: select
+    proxies:
+      - baidu
+      - zhihu
+      - github
+      - ptt
+      - pornhub
+      - bilibili
+
+  - name: 负载均衡
+    type: load-balance
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    proxies:
+      - baidu
+      - zhihu
+      - github
+      - ptt
+      - pornhub
+      - bilibili
+
+
+  - name: 失败切换
+    type: fallback
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    proxies:
+      - baidu
+      - zhihu
+      - github
+      - ptt
+      - pornhub
+      - bilibili
+
+  - name: baidu
+    type: url-test
+    url: 'http://www.baidu.com/'
+    interval: 300
+    use:
+      - websub
+      - test
+  - name: zhihu
+    type: url-test
+    url: 'https://www.zhihu.com/signin'
+    interval: 300
+    use:
+      - websub
+      - test
+  - name: github
+    type: url-test
+    url: 'https://github.com/'
+    interval: 300
+    use:
+      - websub
+      - test
+  - name: ptt
+    type: url-test
+    url: 'https://www.ptt.cc/cls/1056'
+    interval: 300
+    use:
+      - websub
+      - test
+  - name: pornhub
+    type: url-test
+    url: 'https://www.pornhub.com/'
+    interval: 300
+    use:
+      - websub
+      - test
+  - name: bilibili
+    type: url-test
+    url: 'https://www.bilibili.com/'
+    interval: 300
+    use:
+      - websub
+      - test1
+
+proxy-providers:
+  websub:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies"
+    interval: 86400
+    path: ./websub.yaml
+    health-check:
+      enable: true
+      interval: 120
+      url: http://www.gstatic.com/generate_204
+
+  websubss:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies??type=ss"
+    interval: 86400
+    path: ./websubss.yaml
+    health-check:
+      enable: true
+      interval: 120
+      url: http://www.gstatic.com/generate_204
+
+  websubssr:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies??type=ssr"
+    interval: 86400
+    path: ./websubssr.yaml
+    health-check:
+      enable: true
+      interval: 120
+      url: http://www.gstatic.com/generate_204
+
+  websubvmess:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies??type=vmess"
+    interval: 86400
+    path: ./websubvmess.yaml
+    health-check:
+      enable: true
+      interval: 120
+      url: http://www.gstatic.com/generate_204
+
+  test:
+    type: file
+    path: ./test.yaml
+    health-check:
+      enable: true
+      interval: 120
+      url: http://www.gstatic.com/generate_204
+rules:
+  - DOMAIN-SUFFIX,smtp,DIRECT
+  - DOMAIN-KEYWORD,aria2,DIRECT
+
+  - GEOIP,CN,DIRECT
+
+  - MATCH,全局选择

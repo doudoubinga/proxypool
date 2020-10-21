@@ -177,7 +177,10 @@
   options:
     channel: v2ray666
     num: 200
-
+- type: tgchannel
+  options:
+    channel: freeVPNserv
+    num: 200
 
 
 # 论坛

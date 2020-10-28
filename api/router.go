@@ -11,10 +11,10 @@ import (
 	"github.com/gin-contrib/cache/persistence"
 	"github.com/gin-gonic/gin"
 	_ "github.com/heroku/x/hmetrics/onload"
-	"github.com/zu1k/proxypool/config"
-	binhtml "github.com/zu1k/proxypool/internal/bindata/html"
-	C "github.com/zu1k/proxypool/internal/cache"
-	"github.com/zu1k/proxypool/pkg/provider"
+	"github.com/doudoubinga/proxypool/config"
+	binhtml "github.com/doudoubinga/proxypool/internal/bindata/html"
+	C "github.com/doudoubinga/proxypool/internal/cache"
+	"github.com/doudoubinga/proxypool/pkg/provider"
 )
 
 const version = "v0.3.10"
